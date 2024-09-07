@@ -1,0 +1,1 @@
+# ARCHIVO QUE GENERARA LOS CANDIDATOS --> Sera reemplazado por un .json con el mismo contenido
