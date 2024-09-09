@@ -32,8 +32,8 @@ def ingresar_datos():
         print("¡Partido inválido! Intente nuevamente.")
         partido = input("Ingrese el partido del candidato: ").upper()
 
-      candidatos[partidoIndex].append(candidato) # --> Se agrega el candidato al partido
-      
+      if candidato not in candidatos[partidoIndex]: # --> Si el candidato no está en el partido se agrega al partido
+          candidatos[partidoIndex].append(candidato)    
     else:
       print("¡Candidato inválido! Intente nuevamente.")
     candidato = input("Ingrese el siguiente candidato: ")
