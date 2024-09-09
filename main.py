@@ -1,7 +1,9 @@
 from utils.input_handler import ingresar_datos
 from utils.data_generator import generar_datos_mustra
+import utils.entrada as entrada
 
 def main():
+  entrada.entradaDeDatos()
   print("############ SIMULADOR DE ELECCIONES ############")
   tamaño_muestra, candidatos, partidos = ingresar_datos()
 
