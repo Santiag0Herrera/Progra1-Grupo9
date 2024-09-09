@@ -4,13 +4,18 @@ import random
 #candidatos
 
 def generar_muestra(tamaño_muestra, candidatos):
+    candidatosMuestra = []
     listaMuestra = []
+
+    for i in candidatos:
+        for j in i:
+            candidatosMuestra.append(j)  
     
-    for i in range (len(candidatos)):
+    for i in range (len(candidatosMuestra)):
         listaMuestra.append(0)
     
     for _ in range(tamaño_muestra):
-        candidatoIndice = random.randint(0, len(candidatos)-1)
+        candidatoIndice = random.randint(0, len(candidatosMuestra)-1)
         listaMuestra[candidatoIndice] = listaMuestra[candidatoIndice] + 1
         
     return listaMuestra
