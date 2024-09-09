@@ -1,5 +1,5 @@
 from utils.input_handler import ingresar_datos
-from utils.data_generator import generar_datos_mustra
+from utils.data_generator import generar_muestra
 
 def main():
   print("############ SIMULADOR DE ELECCIONES ############")
@@ -16,7 +16,7 @@ def main():
       print(f"    - {candidatos[i][j]}")
   print("+----------------------------------+")
   
-  generar_datos_mustra(tamaño_muestra, candidatos, partidos)
+  generar_muestra(tamaño_muestra, candidatos, partidos)
   
 
 if __name__=="__main__":
