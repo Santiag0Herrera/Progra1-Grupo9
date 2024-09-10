@@ -4,10 +4,16 @@ from .functions import buscar_en_lista
 def ingresar_datos():
   partidos = []
   candidatos = []
-  tamaño_muestra = int(input("Ingresa el tamaño de muestra: "))
-  while tamaño_muestra <= 0:
-    print("¡Tamaño de muestra ingresado inválido! Intente nuevamente.")
-    tamaño_muestra = int(input("Ingresa la población total: "))
+  
+  while True:
+    try:
+      tamaño_muestra = int(input("Ingresa el tamaño de muestra: "))
+      if tamaño_muestra > 0:
+        break
+      else:
+        print("¡Tamaño de muestra ingresado inválido! Intente nuevamente.")
+    except ValueError:
+      print("Tamaño de muestra ingresado invalido. Debe ser un numero entero.")
   
   ## INGRESO DE PARTIDOS ##
   partido = input("Ingrese el primer partido (finaliza con el caracter x): ").upper()
