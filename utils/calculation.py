@@ -20,7 +20,7 @@ def porcentaje_candidatos(muestra):
     total_votos += i
   
   for i in muestra:
-    porcentajes.append(int((i/total_votos)*100))
+    porcentajes.append((i/total_votos)*100)
   
   return porcentajes
   
@@ -31,6 +31,6 @@ def calcular_votos_reales(porcentajes, poblacion_total):
 
   for i in range(len(porcentajes)):
     porcentaje_real = (porcentajes[i] * poblacion_total) / 100
-    porcentajes[i] = int(porcentaje_real)
+    porcentajes[i] = porcentaje_real
   
   return porcentajes
