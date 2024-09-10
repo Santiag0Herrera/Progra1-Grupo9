@@ -4,7 +4,7 @@ from .functions import buscar_en_lista
 def ingresar_datos():
   partidos = []
   candidatos = []
-  
+
   ## INGRESO DE PARTIDOS ##
   partido = input("Ingrese el primer partido (finaliza con el caracter x): ").upper()
   while partido != "X":

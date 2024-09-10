@@ -16,7 +16,8 @@ def poblacion_votante(poblacion_total):
 def porcentaje_candidatos(muestra):
   total_votos = 0
   porcentajes = []
-  for i in muestra:
+  for i in muestra: 
+    
     total_votos += i
   
   for i in muestra:
@@ -34,3 +35,26 @@ def calcular_votos_reales(porcentajes, poblacion_total):
     porcentajes[i] = porcentaje_real
   
   return porcentajes
+
+def calcular_balotaje(resultados_muestra, candidatos):
+    
+    total_votos = sum(resultados_muestra)
+    porcentajes = [(votos / total_votos) * 100 for votos in resultados_muestra]
+     
+    for i in range(len(porcentajes)):
+        if porcentajes[i] > 50:
+            return [candidatos[i]], False 
+    
+    max1, max2 = -1, -1  
+    for i in range(len(resultados_muestra)):
+        if max1 == -1 or resultados_muestra[i] > resultados_muestra[max1]:
+            max2 = max1  
+            max1 = i     
+        elif max2 == -1 or resultados_muestra[i] > resultados_muestra[max2]:
+            max2 = i     
+    
+    return [candidatos[max1], candidatos[max2]], True
+
+
+
+
