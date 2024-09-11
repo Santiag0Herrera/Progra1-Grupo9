@@ -1,0 +1,5 @@
+# Evitar que la carpeta de pycache y archivos .pyc se suban a Git
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
