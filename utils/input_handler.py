@@ -16,8 +16,8 @@ def ingresar_datos():
     partido = input("Ingrese el siguiente partido: ").upper()
 
   ## INGRESO DE CANDIDATOS ##
-  candidato = input("Ingrese el primer candidato (finaliza con el caracter x): ")
-  while candidato != "x":
+  candidato = input("Ingrese el primer candidato (finaliza con el caracter x): ").upper()
+  while candidato != "X":
     partido = ""
     if validar_string(candidato): # --> Si existe el candidato
       print(f"Partidos disponibles: {partidos}")
@@ -26,12 +26,13 @@ def ingresar_datos():
       partidoIndex = buscar_en_lista(partidos, partido)
       while partidoIndex == -1: # --> Si el partido no existe
         print("¡Partido inválido! Intente nuevamente.")
-        partido = input("Ingrese el partido del candidato: ").upper()
+        partido = input("----Ingrese el partido del candidato: ").upper()
+        partidoIndex = buscar_en_lista(partidos, partido)
 
       if candidato not in candidatos[partidoIndex]: # --> Si el candidato no está en el partido se agrega al partido
           candidatos[partidoIndex].append(candidato)    
     else:
       print("¡Candidato inválido! Intente nuevamente.")
-    candidato = input("Ingrese el siguiente candidato: ")
+    candidato = input("Ingrese el siguiente candidato: ").upper()
 
   return candidatos, partidos
