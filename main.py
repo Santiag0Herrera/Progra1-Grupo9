@@ -13,7 +13,7 @@ def main():
     print(f"{candidato} --> {partido}")
 
     #Prueba de json de Provincias
-    print("\n############ POBLACION X PROVINCIA ############\n") # Added a newline character
+    print("\n############ POBLACION X PROVINCIA ############\n") 
 
     jsonProvincias = getJson('../data/provinces.json')
     for provincia in jsonProvincias:
