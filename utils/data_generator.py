@@ -27,7 +27,7 @@ def generar_votos (candidatos):
 
     for i in candidatos:
         for j in i:
-            candidatosMuestra.append(j)  
+            candidatosMuestra.append(j) # => podemos agregar aca el listaMuestra.append(0)
     
     for i in range (len(candidatosMuestra)):
         listaMuestra.append(0)
