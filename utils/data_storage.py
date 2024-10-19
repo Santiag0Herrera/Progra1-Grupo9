@@ -1,9 +1,13 @@
+import json
 
-# Lista que almacena las provincias de Argentina
-provincias = ["Buenos Aires", "Catamarca", "Chaco", "Chubut", "Córdoba", "Corrientes", "Entre Ríos", "Formosa", "Jujuy", "La Pampa", "La Rioja", "Mendoza", "Misiones", "Neuquén", "Río Negro", "Salta", "San Juan", "San Luis", "Santa Cruz", "Santa Fe", "Santiago del Estero", "Tierra del Fuego", "Tucumán"]
-
-# Lista que almacena la poblacion de cada provincia respetando los indices de la lista provincias
-poblacion = [17569053, 429556, 1142963, 603120, 3978984, 1197553, 1426426, 606041, 797955, 366022, 384607, 2014533, 1280960, 726590, 762067, 1440672, 818234, 540905, 333473, 3556522, 1054028, 190641, 1703186]
-
-def obtener_datos():
-    return provincias, poblacion
+def obtener_provincias():
+    try:
+        with open('/home/santiago/Desktop/PrograI/Progra1-Grupo9/utils/provincias.json', 'r') as file:
+            provinces = json.load(file)
+        return provinces
+    except FileNotFoundError:
+        print("The file 'provincias.json' was not found.")
+        return None
+    except json.JSONDecodeError:
+        print("Error decoding JSON from 'provincias.json'.")
+        return None
