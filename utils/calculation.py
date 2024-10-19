@@ -13,3 +13,4 @@ def calcular_votos_reales(porcentajes, poblacion_total):
     voto_real = (porcentajes[i] * poblacion_total) / 100
     votos_reales.append(voto_real)
   return votos_reales
+

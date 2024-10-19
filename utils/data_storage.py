@@ -1,9 +1,31 @@
+import json
+import os
 
-# Lista que almacena las provincias de Argentina
-provincias = ["Buenos Aires", "Catamarca", "Chaco", "Chubut", "Córdoba", "Corrientes", "Entre Ríos", "Formosa", "Jujuy", "La Pampa", "La Rioja", "Mendoza", "Misiones", "Neuquén", "Río Negro", "Salta", "San Juan", "San Luis", "Santa Cruz", "Santa Fe", "Santiago del Estero", "Tierra del Fuego", "Tucumán"]
+def getJson(fileName):
+    # Obtener la ruta del directorio del script actual
+    script_dir = os.path.dirname(__file__)
+    # Construir la ruta completa al archivo JSON
+    full_path = os.path.join(script_dir, fileName)
+    try:
+        with open(full_path, 'r') as file:
+            data = json.load(file)
+        return data
+    except FileNotFoundError:
+        print(f"El archivo {fileName} no fue encontrado.")
+        return None
+    except json.JSONDecodeError:
+        print(f"Error al decodificar JSON de {fileName}")
+        return None
 
-# Lista que almacena la poblacion de cada provincia respetando los indices de la lista provincias
-poblacion = [17569053, 429556, 1142963, 603120, 3978984, 1197553, 1426426, 606041, 797955, 366022, 384607, 2014533, 1280960, 726590, 762067, 1440672, 818234, 540905, 333473, 3556522, 1054028, 190641, 1703186]
-
-def obtener_datos():
-    return provincias, poblacion
+def saveJson(fileName, data):
+    # Obtener la ruta del directorio del script actual
+    script_dir = os.path.dirname(__file__)
+    # Construir la ruta completa al archivo JSON
+    full_path = os.path.join(script_dir, fileName)
+    try:
+        with open(full_path, 'w') as file:
+            json.dump(data, file, indent=4)
+    except FileNotFoundError:
+        print(f"El archivo {fileName} no fue encontrado.")
+    except json.JSONDecodeError:
+        print(f"Error al decodificar JSON de {fileName}")
