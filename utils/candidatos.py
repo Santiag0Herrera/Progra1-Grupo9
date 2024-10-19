@@ -1,7 +1,6 @@
-import json
+from data_storage import getJson
 
-with open('C:/Users/Francisco/Desktop/Progra1-Grupo9-develop/data/candidates.json', 'r') as file:
-    jsonCandidates = json.load(file)
+jsonCandidates = getJson('../data/candidates.json')
 
 # Función para obtener el partido de un candidato
 def obtener_partido_candidato(jsonCandidates, candidato):
@@ -11,8 +10,3 @@ def obtener_partido_candidato(jsonCandidates, candidato):
         return partido
     except KeyError:
         return "Candidato no encontrado. Verifica el nombre del candidato."
-    
-#Ejemplo:
-#Obtiene el partido de Javier Milei
-partido = obtener_partido_candidato(jsonCandidates, "Javier Milei")
-print("Partido de Javier Milei:", partido)
