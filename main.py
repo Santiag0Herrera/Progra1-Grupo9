@@ -5,6 +5,9 @@ def main():
   print("############ SIMULADOR DE ELECCIONES ############")
   # ENTRADA
 
+  muestra = getJson('../data/sample.json')
+  muestra2 = getJson('../data/sample2.json')
+
   jsonCandidates = getJson('../data/candidates.json')
 
   for i in jsonCandidates:
