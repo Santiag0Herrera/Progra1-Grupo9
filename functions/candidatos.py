@@ -1,7 +1,3 @@
-from data_storage import getJson
-
-jsonCandidates = getJson('../data/candidates.json')
-
 # Función para obtener el partido de un candidato
 def obtener_partido_candidato(jsonCandidates, candidato):
     try:

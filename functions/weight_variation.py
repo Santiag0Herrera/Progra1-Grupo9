@@ -1,5 +1,5 @@
 import random
-from dataWeight import matrizPesoCandidatoxProvincia as matriz_pesos_original
+from functions.data_weight import matrizPesoCandidatoxProvincia as matriz_pesos_original
 
 # Función para aplicar variaciones del 5% a la matriz de pesos en porcentajes con decimales
 def aplicar_variacion_matriz_pesos(matriz_pesos_original, variacion_maxima=5):
