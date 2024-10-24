@@ -1,4 +1,5 @@
-from utils.data_storage import getJson
+from functions.read_and_write import getJson, createNewJson, getLastUpdatedJson
+from functions.time_line_candidates import actualizar_json_candidatos
 
 
 def main():
@@ -6,18 +7,14 @@ def main():
   # ENTRADA
 
   jsonCandidates = getJson('../data/candidates.json')
+  jsonWeight = getJson('../data/provinces_weight.json')
+  print(getLastUpdatedJson())
+  newJson = {"matias": "chau"}
+  createNewJson(newJson)
 
-  for i in jsonCandidates:
-    candidato = i
-    partido = jsonCandidates[i]["partido"]
-    print(f"{candidato} --> {partido}")
 
-    #Prueba de json de Provincias
-    print("\n############ POBLACION X PROVINCIA ############\n") 
-
-    jsonProvincias = getJson('../data/provinces.json')
-    for provincia in jsonProvincias:
-        print(provincia + " --> " , jsonProvincias[provincia]["poblacion"])
+  # PROCESAMIENTO
+  # actualizar_json_candidatos(jsonWeight)
 
 if __name__=="__main__":
   main()
