@@ -1,0 +1,506 @@
+{
+  "Buenos Aires": {
+      "poblacion": 17569053,
+      "peso": {
+          "Sergio Massa": 42.95,
+          "Javier Milei": 25.73,
+          "Patricia Bullrich": 24.05,
+          "Juan Schiaretti": 3.70,
+          "Mirian Bregman": 3.57,
+          "Votos en Blanco y Nulos": 3.34,
+          "No fue a votar": 0
+      },
+      "votos": {
+          "Sergio Massa": 7540000,
+          "Javier Milei": 4510000,
+          "Patricia Bullrich": 4210000,
+          "Juan Schiaretti": 650000,
+          "Mirian Bregman": 630000,
+          "Votos en Blanco y Nulos": 590000,
+          "No fue a votar": 0
+      }
+  },
+  "Catamarca": {
+      "poblacion": 429556,
+      "peso": {
+          "Sergio Massa": 42.83,
+          "Javier Milei": 32.03,
+          "Patricia Bullrich": 17.13,
+          "Juan Schiaretti": 6.44,
+          "Mirian Bregman": 1.58,
+          "Votos en Blanco y Nulos": 7.80,
+          "No fue a votar": 0
+      },
+      "votos": {
+          "Sergio Massa": 184000,
+          "Javier Milei": 137000,
+          "Patricia Bullrich": 73000,
+          "Juan Schiaretti": 27400,
+          "Mirian Bregman": 6700,
+          "Votos en Blanco y Nulos": 33000,
+          "No fue a votar": 0
+      }
+  },
+  "Chaco": {
+      "poblacion": 1142963,
+      "peso": {
+          "Sergio Massa": 43.67,
+          "Javier Milei": 27.82,
+          "Patricia Bullrich": 24.10,
+          "Juan Schiaretti": 3.62,
+          "Mirian Bregman": 0.78,
+          "Votos en Blanco y Nulos": 1.64,
+          "No fue a votar": 0
+      },
+      "votos": {
+          "Sergio Massa": 499000,
+          "Javier Milei": 318000,
+          "Patricia Bullrich": 275000,
+          "Juan Schiaretti": 41300,
+          "Mirian Bregman": 8900,
+          "Votos en Blanco y Nulos": 18700,
+          "No fue a votar": 0
+      }
+  },
+  "Chubut": {
+      "poblacion": 603120,
+      "peso": {
+          "Sergio Massa": 32.22,
+          "Javier Milei": 35.13,
+          "Patricia Bullrich": 20.57,
+          "Juan Schiaretti": 7.70,
+          "Mirian Bregman": 4.38,
+          "Votos en Blanco y Nulos": 2.85,
+          "No fue a votar": 0
+      },
+      "votos": {
+          "Sergio Massa": 194000,
+          "Javier Milei": 211000,
+          "Patricia Bullrich": 124000,
+          "Juan Schiaretti": 46400,
+          "Mirian Bregman": 26400,
+          "Votos en Blanco y Nulos": 17200,
+          "No fue a votar": 0
+      }
+  },
+  "Ciudad Autonoma de Buenos Aires": {
+      "poblacion": 3121707,
+      "peso": {
+          "Sergio Massa": 32.18,
+          "Javier Milei": 19.98,
+          "Patricia Bullrich": 41.23,
+          "Juan Schiaretti": 3.97,
+          "Mirian Bregman": 3.53,
+          "Votos en Blanco y Nulos": 2.50,
+          "No fue a votar": 0
+      },
+      "votos": {
+          "Sergio Massa": 1005000,
+          "Javier Milei": 625000,
+          "Patricia Bullrich": 1290000,
+          "Juan Schiaretti": 124000,
+          "Mirian Bregman": 110000,
+          "Votos en Blanco y Nulos": 78000,
+          "No fue a votar": 0
+      }
+  },
+  "Cordoba": {
+      "poblacion": 3978984,
+      "peso": {
+          "Sergio Massa": 13.42,
+          "Javier Milei": 33.58,
+          "Patricia Bullrich": 22.63,
+          "Juan Schiaretti": 28.98,
+          "Mirian Bregman": 1.39,
+          "Votos en Blanco y Nulos": 1.62,
+          "No fue a votar": 0
+      },
+      "votos": {
+          "Sergio Massa": 533000,
+          "Javier Milei": 1335000,
+          "Patricia Bullrich": 900000,
+          "Juan Schiaretti": 1150000,
+          "Mirian Bregman": 55000,
+          "Votos en Blanco y Nulos": 64000,
+          "No fue a votar": 0
+      }
+  },
+  "Corrientes": {
+      "poblacion": 1197553,
+      "peso": {
+          "Sergio Massa": 37.21,
+          "Javier Milei": 26.87,
+          "Patricia Bullrich": 32.13,
+          "Juan Schiaretti": 2.73,
+          "Mirian Bregman": 1.06,
+          "Votos en Blanco y Nulos": 2.49,
+          "No fue a votar": 0
+      },
+      "votos": {
+          "Sergio Massa": 446000,
+          "Javier Milei": 322000,
+          "Patricia Bullrich": 385000,
+          "Juan Schiaretti": 32700,
+          "Mirian Bregman": 12700,
+          "Votos en Blanco y Nulos": 29800,
+          "No fue a votar": 0
+      }
+  },
+  "Entre Rios": {
+      "poblacion": 1426426,
+      "peso": {
+          "Sergio Massa": 33.31,
+          "Javier Milei": 29.74,
+          "Patricia Bullrich": 30.03,
+          "Juan Schiaretti": 5.36,
+          "Mirian Bregman": 1.56,
+          "Votos en Blanco y Nulos": 5.53,
+          "No fue a votar": 0
+      },
+      "votos": {
+          "Sergio Massa": 475000,
+          "Javier Milei": 424000,
+          "Patricia Bullrich": 429000,
+          "Juan Schiaretti": 76500,
+          "Mirian Bregman": 22300,
+          "Votos en Blanco y Nulos": 79000,
+          "No fue a votar": 0
+      }
+  },
+  "Formosa": {
+      "poblacion": 606041,
+      "peso": {
+          "Sergio Massa": 52.31,
+          "Javier Milei": 29.06,
+          "Patricia Bullrich": 15.38,
+          "Juan Schiaretti": 2.44,
+          "Mirian Bregman": 0.81,
+          "Votos en Blanco y Nulos": 1.88,
+          "No fue a votar": 0
+      },
+      "votos": {
+          "Sergio Massa": 317000,
+          "Javier Milei": 176000,
+          "Patricia Bullrich": 93000,
+          "Juan Schiaretti": 14700,
+          "Mirian Bregman": 4900,
+          "Votos en Blanco y Nulos": 11400,
+          "No fue a votar": 0
+      }
+  },
+  "Jujuy": {
+      "poblacion": 797955,
+      "peso": {
+          "Sergio Massa": 32.36,
+          "Javier Milei": 37.35,
+          "Patricia Bullrich": 19.96,
+          "Juan Schiaretti": 6.79,
+          "Mirian Bregman": 3.54,
+          "Votos en Blanco y Nulos": 2.40,
+          "No fue a votar": 0
+      },
+      "votos": {
+          "Sergio Massa": 258000,
+          "Javier Milei": 299000,
+          "Patricia Bullrich": 160000,
+          "Juan Schiaretti": 54500,
+          "Mirian Bregman": 28400,
+          "Votos en Blanco y Nulos": 19200,
+          "No fue a votar": 0
+      }
+  },
+  "La Pampa": {
+      "poblacion": 377576,
+      "peso": {
+          "Sergio Massa": 44.19,
+          "Javier Milei": 33.75,
+          "Patricia Bullrich": 15.78,
+          "Juan Schiaretti": 5.41,
+          "Mirian Bregman": 1.87,
+          "Votos en Blanco y Nulos": 3.13,
+          "No fue a votar": 0
+      },
+      "votos": {
+          "Sergio Massa": 167000,
+          "Javier Milei": 127000,
+          "Patricia Bullrich": 59000,
+          "Juan Schiaretti": 20000,
+          "Mirian Bregman": 7100,
+          "Votos en Blanco y Nulos": 12000,
+          "No fue a votar": 0
+      }
+  },
+  "La Rioja": {
+      "poblacion": 384356,
+      "peso": {
+          "Sergio Massa": 49.57,
+          "Javier Milei": 28.62,
+          "Patricia Bullrich": 17.20,
+          "Juan Schiaretti": 3.92,
+          "Mirian Bregman": 0.68,
+          "Votos en Blanco y Nulos": 5.01,
+          "No fue a votar": 0
+      },
+      "votos": {
+          "Sergio Massa": 191000,
+          "Javier Milei": 110000,
+          "Patricia Bullrich": 66000,
+          "Juan Schiaretti": 15000,
+          "Mirian Bregman": 2500,
+          "Votos en Blanco y Nulos": 19200,
+          "No fue a votar": 0
+      }
+  },
+  "Mendoza": {
+      "poblacion": 1992258,
+      "peso": {
+          "Sergio Massa": 27.09,
+          "Javier Milei": 38.30,
+          "Patricia Bullrich": 26.50,
+          "Juan Schiaretti": 6.33,
+          "Mirian Bregman": 1.63,
+          "Votos en Blanco y Nulos": 2.54,
+          "No fue a votar": 0
+      },
+      "votos": {
+          "Sergio Massa": 539000,
+          "Javier Milei": 764000,
+          "Patricia Bullrich": 535000,
+          "Juan Schiaretti": 130000,
+          "Mirian Bregman": 32000,
+          "Votos en Blanco y Nulos": 49000,
+          "No fue a votar": 0
+      }
+  },
+  "Misiones": {
+      "poblacion": 1191392,
+      "peso": {
+          "Sergio Massa": 33.27,
+          "Javier Milei": 30.45,
+          "Patricia Bullrich": 22.31,
+          "Juan Schiaretti": 6.19,
+          "Mirian Bregman": 7.78,
+          "Votos en Blanco y Nulos": 2.98,
+          "No fue a votar": 0
+      },
+      "votos": {
+          "Sergio Massa": 396000,
+          "Javier Milei": 363000,
+          "Patricia Bullrich": 268000,
+          "Juan Schiaretti": 76000,
+          "Mirian Bregman": 98000,
+          "Votos en Blanco y Nulos": 33000,
+          "No fue a votar": 0
+      }
+  },
+  "Neuquen": {
+      "poblacion": 703109,
+      "peso": {
+          "Sergio Massa": 41.27,
+          "Javier Milei": 27.03,
+          "Patricia Bullrich": 24.54,
+          "Juan Schiaretti": 4.54,
+          "Mirian Bregman": 2.62,
+          "Votos en Blanco y Nulos": 0.99,
+          "No fue a votar": 0
+      },
+      "votos": {
+          "Sergio Massa": 290000,
+          "Javier Milei": 190000,
+          "Patricia Bullrich": 177000,
+          "Juan Schiaretti": 32000,
+          "Mirian Bregman": 18000,
+          "Votos en Blanco y Nulos": 7000,
+          "No fue a votar": 0
+      }
+  },
+  "Rio Negro": {
+      "poblacion": 762067,
+      "peso": {
+          "Sergio Massa": 37.85,
+          "Javier Milei": 33.76,
+          "Patricia Bullrich": 18.13,
+          "Juan Schiaretti": 6.25,
+          "Mirian Bregman": 4.01,
+          "Votos en Blanco y Nulos": 4.41,
+          "No fue a votar": 0
+      },
+      "votos": {
+          "Sergio Massa": 288000,
+          "Javier Milei": 257000,
+          "Patricia Bullrich": 138000,
+          "Juan Schiaretti": 48000,
+          "Mirian Bregman": 30000,
+          "Votos en Blanco y Nulos": 34000,
+          "No fue a votar": 0
+      }
+  },
+  "Salta": {
+      "poblacion": 1440672,
+      "peso": {
+          "Sergio Massa": 38.00,
+          "Javier Milei": 40.27,
+          "Patricia Bullrich": 13.80,
+          "Juan Schiaretti": 6.18,
+          "Mirian Bregman": 1.75,
+          "Votos en Blanco y Nulos": 3.07,
+          "No fue a votar": 0
+      },
+      "votos": {
+          "Sergio Massa": 547000,
+          "Javier Milei": 581000,
+          "Patricia Bullrich": 199000,
+          "Juan Schiaretti": 89000,
+          "Mirian Bregman": 25000,
+          "Votos en Blanco y Nulos": 44000,
+          "No fue a votar": 0
+      }
+  },
+  "San Juan": {
+      "poblacion": 818234,
+      "peso": {
+          "Sergio Massa": 33.30,
+          "Javier Milei": 35.08,
+          "Patricia Bullrich": 23.20,
+          "Juan Schiaretti": 6.17,
+          "Mirian Bregman": 2.23,
+          "Votos en Blanco y Nulos": 2.46,
+          "No fue a votar": 0
+      },
+      "votos": {
+          "Sergio Massa": 273000,
+          "Javier Milei": 287000,
+          "Patricia Bullrich": 190000,
+          "Juan Schiaretti": 50500,
+          "Mirian Bregman": 18000,
+          "Votos en Blanco y Nulos": 20000,
+          "No fue a votar": 0
+      }
+  },
+  "San Luis": {
+      "poblacion": 540905,
+      "peso": {
+          "Sergio Massa": 27.33,
+          "Javier Milei": 43.33,
+          "Patricia Bullrich": 20.91,
+          "Juan Schiaretti": 6.24,
+          "Mirian Bregman": 2.19,
+          "Votos en Blanco y Nulos": 2.99,
+          "No fue a votar": 0
+      },
+      "votos": {
+          "Sergio Massa": 147000,
+          "Javier Milei": 234000,
+          "Patricia Bullrich": 113000,
+          "Juan Schiaretti": 33700,
+          "Mirian Bregman": 12000,
+          "Votos en Blanco y Nulos": 16000,
+          "No fue a votar": 0
+      }
+  },
+  "Santa Cruz": {
+      "poblacion": 333473,
+      "peso": {
+          "Sergio Massa": 37.79,
+          "Javier Milei": 36.30,
+          "Patricia Bullrich": 16.41,
+          "Juan Schiaretti": 6.60,
+          "Mirian Bregman": 2.90,
+          "Votos en Blanco y Nulos": 7.79,
+          "No fue a votar": 0
+      },
+      "votos": {
+          "Sergio Massa": 126000,
+          "Javier Milei": 121000,
+          "Patricia Bullrich": 55000,
+          "Juan Schiaretti": 22000,
+          "Mirian Bregman": 9600,
+          "Votos en Blanco y Nulos": 26000,
+          "No fue a votar": 0
+      }
+  },
+  "Santa Fe": {
+      "poblacion": 3556522,
+      "peso": {
+          "Sergio Massa": 29.70,
+          "Javier Milei": 32.52,
+          "Patricia Bullrich": 26.88,
+          "Juan Schiaretti": 7.77,
+          "Mirian Bregman": 3.13,
+          "Votos en Blanco y Nulos": 3.26,
+          "No fue a votar": 0
+      },
+      "votos": {
+          "Sergio Massa": 1053000,
+          "Javier Milei": 1150000,
+          "Patricia Bullrich": 950000,
+          "Juan Schiaretti": 290000,
+          "Mirian Bregman": 120000,
+          "Votos en Blanco y Nulos": 350000,
+          "No fue a votar": 0
+      }
+  },
+  "Santiago del Estero": {
+      "poblacion": 1041430,
+      "peso": {
+          "Sergio Massa": 45.09,
+          "Javier Milei": 21.15,
+          "Patricia Bullrich": 30.19,
+          "Juan Schiaretti": 2.43,
+          "Mirian Bregman": 1.14,
+          "Votos en Blanco y Nulos": 1.00,
+          "No fue a votar": 0
+      },
+      "votos": {
+          "Sergio Massa": 470000,
+          "Javier Milei": 220000,
+          "Patricia Bullrich": 315000,
+          "Juan Schiaretti": 25000,
+          "Mirian Bregman": 11000,
+          "Votos en Blanco y Nulos": 10000,
+          "No fue a votar": 0
+      }
+  },
+  "Tierra del Fuego": {
+      "poblacion": 175000,
+      "peso": {
+          "Sergio Massa": 43.75,
+          "Javier Milei": 37.50,
+          "Patricia Bullrich": 15.63,
+          "Juan Schiaretti": 3.13,
+          "Mirian Bregman": 0.00,
+          "Votos en Blanco y Nulos": 0.00,
+          "No fue a votar": 0
+      },
+      "votos": {
+          "Sergio Massa": 76500,
+          "Javier Milei": 65625,
+          "Patricia Bullrich": 27375,
+          "Juan Schiaretti": 5460,
+          "Mirian Bregman": 0,
+          "Votos en Blanco y Nulos": 0,
+          "No fue a votar": 0
+      }
+  },
+  "Tucuman": {
+      "poblacion": 1711500,
+      "peso": {
+          "Sergio Massa": 40.00,
+          "Javier Milei": 25.00,
+          "Patricia Bullrich": 30.00,
+          "Juan Schiaretti": 2.00,
+          "Mirian Bregman": 3.00,
+          "Votos en Blanco y Nulos": 0.00,
+          "No fue a votar": 0
+      },
+      "votos": {
+          "Sergio Massa": 685000,
+          "Javier Milei": 428000,
+          "Patricia Bullrich": 513000,
+          "Juan Schiaretti": 34200,
+          "Mirian Bregman": 51300,
+          "Votos en Blanco y Nulos": 0,
+          "No fue a votar": 0
+      }
+  }
+}

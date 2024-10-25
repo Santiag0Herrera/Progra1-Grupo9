@@ -1,46 +1,56 @@
 import random 
-import math
 
-# Cálculo automático del tamanio de la muestra
-def calcular_tamanio_muestra():
-  # Solicitar solo el tamanio de la población
-  N = int(input("Ingresa el tamanio de la población (N): "))
-  while N <= 0:
-      print("¡El tamanio de la población debe ser mayor a cero!")
-      N = int(input("Ingresa el tamanio de la población (N): "))
+def generar_votos (jsonMuestra, candidatos):
+  candidates = list(candidatos.keys())
 
-  Nvotante = N*0.77 #Se asume que el 77% de la población es votante
- 
-  # Valores predeterminados
-  Z = 1.96  # Z para 95% de nivel de confianza
-  p = 0.5   # Proporción estimada de la población (0.5 es el más conservador)
-  E = 0.05  # Margen de error (5%)
+  for prov in jsonMuestra:
+    padron = jsonMuestra[prov]["poblacion"]*0.77
+    poblacionVotanteAusente = padron*0.3
+    poblacionVotantePresente = padron - poblacionVotanteAusente
 
-  # Cálculo del tamanio de la muestra sin corrección de población finita
-  n = (Z**2 * p * (1 - p)) / (E**2) #Tamanio de la muestra sin corrección de población finita
-  n_corrigido = n / (1 + ((n - 1) / Nvotante)) 
-  return math.ceil(n_corrigido), Nvotante
+    for cand in candidates:
+      jsonMuestra[prov]["votos"][cand] = (jsonMuestra[prov]["peso"][cand] * poblacionVotantePresente) / 100
 
-def generar_votos (candidatos):
-    candidatosMuestra = []
-    listaMuestra = []
+  return jsonMuestra
 
-    for i in candidatos:
-        for j in i:
-            candidatosMuestra.append(j)  
-    
-    for i in range (len(candidatosMuestra)):
-        listaMuestra.append(0)
-    
-    tamanio_de_muestra, total_votantes_reales = calcular_tamanio_muestra()
+def calcular_variacion_porcentajes(provinces_weight, variacion_maxima=5):
+    # Diccionario para almacenar los porcentajes ajustados
+    porcentajes_ajustados = {}
 
-    for _ in range(tamanio_de_muestra):
-        candidatoIndice = random.randint(0, len(candidatosMuestra)-1)
-        listaMuestra[candidatoIndice] = listaMuestra[candidatoIndice] + 1
+    # Procesar cada provincia en el JSON
+    for provincia, datos in provinces_weight.items():
+        porcentajes_ajustados[provincia] = {}
         
-    return candidatosMuestra, listaMuestra, total_votantes_reales
+        # Suma para ajustar posteriormente a 100%
+        suma_ajustada = 0
 
-
-
-
-
+        for candidato, base_porcentaje in datos["peso"].items():
+            # Variación aleatoria entre -5% y 5% con dos decimales
+            variacion = round(random.uniform(-variacion_maxima, variacion_maxima), 2)
+            porcentaje_ajustado = round(base_porcentaje + variacion, 2)
+            
+            # Limitar el porcentaje ajustado entre 1 y 100
+            porcentaje_ajustado = max(min(porcentaje_ajustado, 100), 1)
+            
+            # Añadir al diccionario y acumular la suma para el ajuste final
+            porcentajes_ajustados[provincia][candidato] = porcentaje_ajustado
+            suma_ajustada += porcentaje_ajustado
+        
+        # Ajuste para que la suma sea exactamente 100%
+        diferencia = round(100.0 - suma_ajustada, 2)
+        
+        # Si la diferencia es distinta de cero, corregir proporcionalmente
+        candidatos = list(porcentajes_ajustados[provincia].keys())
+        i = 0
+        while diferencia != 0:
+            candidato = candidatos[i % len(candidatos)]
+            ajuste = 0.01 if diferencia > 0 else -0.01
+            nuevo_valor = porcentajes_ajustados[provincia][candidato] + ajuste
+            
+            # Aplicar ajuste sin exceder los límites de 1% a 100%
+            if 1 <= nuevo_valor <= 100:
+                porcentajes_ajustados[provincia][candidato] = round(nuevo_valor, 2)
+                diferencia = round(diferencia - ajuste, 2)
+            i += 1
+    
+    return porcentajes_ajustados

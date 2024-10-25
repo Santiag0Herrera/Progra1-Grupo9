@@ -1,5 +1,5 @@
 from functions.read_and_write import getJson, createNewJson, getLastUpdatedJson
-from functions.time_line_candidates import actualizar_json_candidatos
+from functions.data_generator import generar_votos, calcular_variacion_porcentajes
 
 
 def main():
@@ -7,11 +7,10 @@ def main():
   # ENTRADA
 
   jsonCandidates = getJson('../data/candidates.json')
-  jsonWeight = getJson('../data/provinces_weight.json')
-  print(getLastUpdatedJson())
-  newJson = {"matias": "chau"}
+  lastUpdated = getLastUpdatedJson() # OBTIENE EL JSON CON EL PESO VIEJO
+  updatedWeightJSON = calcular_variacion_porcentajes(lastUpdated) # == lastUpdated PROCESADO POR EL CODIGO DE MATI
+  newJson = generar_votos(updatedWeightJSON, jsonCandidates)
   createNewJson(newJson)
-
 
   # PROCESAMIENTO
   # actualizar_json_candidatos(jsonWeight)
