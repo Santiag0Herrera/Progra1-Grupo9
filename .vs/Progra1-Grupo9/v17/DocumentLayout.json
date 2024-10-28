@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\nvillareal\\Desktop\\Proyecto Elecciones Progra 1\\Progra1-Grupo9\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nvillareal\\Desktop\\Proyecto Elecciones Progra 1\\Progra1-Grupo9\\data\\provinces_weight.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:data\\provinces_weight.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nvillareal\\Desktop\\Proyecto Elecciones Progra 1\\Progra1-Grupo9\\main.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:main.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nvillareal\\Desktop\\Proyecto Elecciones Progra 1\\Progra1-Grupo9\\functions\\data_generator.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:functions\\data_generator.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,19 +30,36 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "data_generator.py",
+              "DocumentMoniker": "C:\\Users\\nvillareal\\Desktop\\Proyecto Elecciones Progra 1\\Progra1-Grupo9\\functions\\data_generator.py",
+              "RelativeDocumentMoniker": "functions\\data_generator.py",
+              "ToolTip": "C:\\Users\\nvillareal\\Desktop\\Proyecto Elecciones Progra 1\\Progra1-Grupo9\\functions\\data_generator.py",
+              "RelativeToolTip": "functions\\data_generator.py",
+              "ViewState": "AgIAAC8AAAAAAAAAAAArwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-10-28T20:40:15.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "provinces_weight.json",
-              "DocumentMoniker": "C:\\Users\\nvillareal\\Desktop\\Proyecto Elecciones Progra 1\\Progra1-Grupo9\\data\\provinces_weight.json",
-              "RelativeDocumentMoniker": "data\\provinces_weight.json",
-              "ToolTip": "C:\\Users\\nvillareal\\Desktop\\Proyecto Elecciones Progra 1\\Progra1-Grupo9\\data\\provinces_weight.json",
-              "RelativeToolTip": "data\\provinces_weight.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-28T01:35:16.664Z",
+              "Title": "main.py",
+              "DocumentMoniker": "C:\\Users\\nvillareal\\Desktop\\Proyecto Elecciones Progra 1\\Progra1-Grupo9\\main.py",
+              "RelativeDocumentMoniker": "main.py",
+              "ToolTip": "C:\\Users\\nvillareal\\Desktop\\Proyecto Elecciones Progra 1\\Progra1-Grupo9\\main.py",
+              "RelativeToolTip": "main.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2024-10-28T11:47:07.216Z",
               "EditorCaption": ""
             }
           ]

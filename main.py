@@ -3,14 +3,14 @@ from functions.data_generator import generar_votos, calcular_variacion_porcentaj
 
 
 def main():
-  print("############ SIMULADOR DE ELECCIONES ############")
+    print("############ SIMULADOR DE ELECCIONES ############")
   # ENTRADA
 
-  jsonCandidates = getJson('../data/candidates.json')
-  lastUpdated = getLastUpdatedJson() # OBTIENE EL JSON CON EL PESO VIEJO
-  updatedWeightJSON = calcular_variacion_porcentajes(lastUpdated) # == lastUpdated PROCESADO POR EL CODIGO DE MATI
-  newJson = generar_votos(updatedWeightJSON, jsonCandidates)
-  createNewJson(newJson)
+    jsonCandidates = getJson('../data/candidates.json') #JSON de candidatos --- OK
+    lastUpdated = getLastUpdatedJson() # OBTIENE EL JSON CON EL PESO VIEJO --- OK
+    updatedWeightJSON = calcular_variacion_porcentajes(lastUpdated) # == lastUpdated PROCESADO POR EL CODIGO DE MATI--- OK
+    newJson = generar_votos(updatedWeightJSON, jsonCandidates) # --- Se produce excepcion por parametro de clave "poblacion"
+    createNewJson(newJson)
 
   # PROCESAMIENTO
   # actualizar_json_candidatos(jsonWeight)

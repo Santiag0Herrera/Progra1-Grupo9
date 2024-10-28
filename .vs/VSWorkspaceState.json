@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\data"
+    "\\data",
+    "\\data\\ddbb",
+    "\\functions"
   ],
-  "SelectedNode": "\\data\\provinces_weight.json",
+  "SelectedNode": "\\main.py",
   "PreviewInSolutionExplorer": false
 }
