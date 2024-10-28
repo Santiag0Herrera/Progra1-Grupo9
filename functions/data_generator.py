@@ -8,7 +8,7 @@ def calcular_variacion_porcentajes(provinces_weight, variacion_maxima=5):
     for provincia, datos in provinces_weight.items():
         porcentajes_ajustados[provincia] = {
             "peso": {},
-            "poblacion": datos["poblacion"], # Almacenar la población
+            "poblacion": datos["poblacion"],
             "votos": datos["votos"]
         }
         

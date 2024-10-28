@@ -6,10 +6,10 @@ def main():
     print("############ SIMULADOR DE ELECCIONES ############")
   # ENTRADA
 
-    jsonCandidates = getJson('../data/candidates.json') #JSON de candidatos --- OK
-    lastUpdated = getLastUpdatedJson() # OBTIENE EL JSON CON EL PESO VIEJO --- OK
-    updatedWeightJSON = calcular_variacion_porcentajes(lastUpdated) # == lastUpdated PROCESADO POR EL CODIGO DE MATI--- OK
-    newJson = generar_votos(updatedWeightJSON, jsonCandidates) # --- Se produce excepcion por parametro de clave "poblacion"
+    jsonCandidates = getJson('../data/candidates.json') 
+    lastUpdated = getLastUpdatedJson() 
+    updatedWeightJSON = calcular_variacion_porcentajes(lastUpdated) 
+    newJson = generar_votos(updatedWeightJSON, jsonCandidates) 
     createNewJson(newJson)
 
   # PROCESAMIENTO
