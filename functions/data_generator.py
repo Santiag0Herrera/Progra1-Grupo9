@@ -9,7 +9,8 @@ def calcular_variacion_porcentajes(provinces_weight, variacion_maxima=5):
         porcentajes_ajustados[provincia] = {
             "peso": {},
             "poblacion": datos["poblacion"],
-            "votos": datos["votos"]
+            "votos": datos["votos"],
+            "votantes_ausentes": datos["votantes_ausentes"]
         }
         
         # Suma para ajustar posteriormente a 100%
@@ -32,6 +33,7 @@ def calcular_variacion_porcentajes(provinces_weight, variacion_maxima=5):
         
         # Si la diferencia es distinta de cero, corregir proporcionalmente
         candidatos = list(porcentajes_ajustados[provincia]["peso"].keys())
+
         i = 0
         while diferencia != 0:
             candidato = candidatos[i % len(candidatos)]
@@ -51,10 +53,11 @@ def generar_votos(jsonMuestra, candidatos):
     
     for prov in jsonMuestra:
         padron = jsonMuestra[prov]["poblacion"] * 0.77
-        poblacionVotanteAusente = padron * 0.3
+        poblacionVotanteAusente = padron * 0.23
         poblacionVotantePresente = padron - poblacionVotanteAusente
 
         for cand in candidates:
-            jsonMuestra[prov]["votos"][cand] = (jsonMuestra[prov]["peso"][cand] * poblacionVotantePresente) / 100
+            candidateVotes = round((jsonMuestra[prov]["peso"][cand] * poblacionVotantePresente) / 100)
+            jsonMuestra[prov]["votos"][cand] = candidateVotes
 
     return jsonMuestra
