@@ -1,5 +1,6 @@
 import json
 import os
+from functions.backup import backupJson0
 
 def getJson(fileName):
     # Obtener la ruta del directorio del script actual
@@ -46,7 +47,7 @@ def createNewJson(data):
     saveJson("../data/ddbb/amount.json", {"amount": storage_length + 1})
 
 def getLastUpdatedJson():
-    defaultContent = {"matias": "hola"}
+    defaultContent = backupJson0()
     storage_length = 0
     file = getJson("../data/ddbb/0.json")
     # Obtener la ruta del directorio del script actual

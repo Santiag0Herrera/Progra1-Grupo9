@@ -12,7 +12,7 @@ def main():
     lastUpdated = getLastUpdatedJson() 
     updatedWeightJSON = calcular_variacion_porcentajes(lastUpdated) 
     newJson = generar_votos(updatedWeightJSON, jsonCandidates)
-    # results = createInforme(newJson)
+    results = createInforme(newJson)
     createNewJson(newJson)
     
 
