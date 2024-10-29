@@ -86,12 +86,13 @@ def createInforme(resultados):
                 informes = json.load(file)
             except json.JSONDecodeError:
                 print("El archivo JSON de resultados no existe. Se creara un nuevo archivo de resultados.json")
-                informes = []
+                informes = {}
     else:
-        informes = []
+        informes = {}
 
-    informes.append(resultados)
+    storage_length = getJson("../data/ddbb/amount.json")["amount"]
+    informes[storage_length] = resultados
         
     # Escribir el contenido actualizado de nuevo en el archivo
-    with open(full_path, 'a') as file:
+    with open(full_path, 'w') as file:
         json.dump(informes, file, indent=4)

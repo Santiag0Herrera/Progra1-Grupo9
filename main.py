@@ -14,10 +14,10 @@ def main():
     newJson = generar_votos(updatedWeightJSON, jsonCandidates)
     results = createInforme(newJson)
     createNewJson(newJson)
-    
 
     # SALIDA
-    generar_salida(newJson)
+    result = generar_salida(newJson)
+    createInforme(result)
 
 if __name__=="__main__":
   main()
