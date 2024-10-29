@@ -1,22 +1,22 @@
-from utils.data_generator import generar_votos
-from utils.calculation import porcentaje_candidatos
-from utils.calculation import calcular_votos_reales
-from utils.print_generator import generar_salida
-from utils.candidatos import obtener_partido_candidato
+from functions.read_and_write import getJson, createNewJson, getLastUpdatedJson, saveJson, createInforme
+from functions.data_generator import generar_votos, calcular_variacion_porcentajes
+from functions.print_generator import generar_salida
 
 
 def main():
-  print("############ SIMULADOR DE ELECCIONES ############")
-  # ENTRADA
-  candidatos, partidos = obtener_partido_candidato()  #VARIABLE INPUTS
+    print("############ SIMULADOR DE ELECCIONES ############")
+    # ENRTADA
+    jsonCandidates = getJson('../data/candidates.json') 
 
-  # PROCESO
-  candidatosMuestra, votosMuestra, total_votantes_reales = generar_votos(candidatos)
-  porcentajes = porcentaje_candidatos(votosMuestra)
-  estimacion = calcular_votos_reales(porcentajes, total_votantes_reales)
+    # PROCESO
+    lastUpdated = getLastUpdatedJson() 
+    updatedWeightJSON = calcular_variacion_porcentajes(lastUpdated) 
+    newJson = generar_votos(updatedWeightJSON, jsonCandidates)
+    createNewJson(newJson)
 
-  # SALIDA
-  generar_salida(total_votantes_reales, porcentajes, candidatosMuestra, estimacion)
+    # SALIDA
+    result = generar_salida(newJson)
+    createInforme(result)
 
 if __name__=="__main__":
   main()

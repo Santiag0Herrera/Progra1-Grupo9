@@ -1,24 +1,20 @@
 {
-    "Sergio Massa": {
-     "partido": "Frente para la Victoria"
-   },
-   "Javier Milei": {
-     "partido": "La Libertad Avanza"
-   },
-   "Patricia Bullrich": {
-     "partido": "Juntos por el Cambio"
-   },
-   "Juan Schiaretti": {
-     "partido": "Juntos Podemos"
-   },
-   "Mirian Bregman": {
-     "partido": "Frente de Izquierda"
-   },
-   "Votos en Blanco y Nulos": {
-     "partido": "Votos en Blanco"
-   },
-   "No fue a votar": {
-     "nombre": "No fue a votar",
-     "partido": "No fue a votar"
+  "Sergio Massa": {
+    "partido": "Frente para la Victoria"
+  },
+  "Javier Milei": {
+    "partido": "La Libertad Avanza"
+  },
+  "Patricia Bullrich": {
+    "partido": "Juntos por el Cambio"
+  },
+  "Juan Schiaretti": {
+    "partido": "Juntos Podemos"
+  },
+  "Mirian Bregman": {
+    "partido": "Frente de Izquierda"
+  },
+  "Votos B/N": {
+    "partido": "Votos en Blanco"
   }
- }
+}
