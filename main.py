@@ -1,4 +1,4 @@
-from functions.read_and_write import getJson, createNewJson, getLastUpdatedJson, saveJson
+from functions.read_and_write import getJson, createNewJson, getLastUpdatedJson, saveJson, createInforme
 from functions.data_generator import generar_votos, calcular_variacion_porcentajes
 from functions.print_generator import generar_salida
 
@@ -11,12 +11,12 @@ def main():
     # PROCESO
     lastUpdated = getLastUpdatedJson() 
     updatedWeightJSON = calcular_variacion_porcentajes(lastUpdated) 
-    newJson = generar_votos(updatedWeightJSON, jsonCandidates) 
+    newJson = generar_votos(updatedWeightJSON, jsonCandidates)
     createNewJson(newJson)
-    
 
     # SALIDA
-    generar_salida(newJson)
+    result = generar_salida(newJson)
+    createInforme(result)
 
 if __name__=="__main__":
   main()
