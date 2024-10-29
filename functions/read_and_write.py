@@ -95,7 +95,7 @@ def createInformeMesAMes(votos):
     else:
         informes = []
         
-    # Inicializo contador que representará el mes del informe
+    # Inicializo contador que representar el mes del informe
     rutaCompleta = os.path.join(script_dir, '../data/ddbb/', 'amount.json')
     with open(rutaCompleta, 'r') as amountFile:
         data = json.load(amountFile)
@@ -104,9 +104,9 @@ def createInformeMesAMes(votos):
     mesTexto = getMonthText(amount)
     if mesTexto is None:
         print("Mes no valido")
-        return  # Detener la ejecución si el mes no es válido
+        return  # Detener la ejecucion si el mes no es vï¿½lido
         
-    # Añadir el nuevo informe al archivo
+    # Aï¿½adir el nuevo informe al archivo
     cabecera = mesTexto.center(20,"#") 
     informes.append(cabecera)
     informes.append(votos)
