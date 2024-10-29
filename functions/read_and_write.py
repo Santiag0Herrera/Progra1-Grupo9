@@ -70,3 +70,47 @@ def getLastUpdatedJson():
           file = getJson(f"../data/ddbb/{storage_length}.json")
       file = getJson(f"../data/ddbb/{storage_length-1}.json")
       return file
+
+def getMonthText(amount):
+    months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
+    if 0 <= amount < len(months):
+        return months[amount] 
+    else: 
+        return None
+
+def createInformeMesAMes(votos):
+    # Obtener la ruta completa del directorio
+    script_dir = os.path.dirname(__file__)
+    full_path = os.path.join(script_dir, '../data/ddbb/', 'resultados.json')
+    os.makedirs(os.path.dirname(full_path), exist_ok=True)
+        
+    # valido que exista la ruta para salvar en caso de excepcion 
+    if os.path.exists(full_path):
+        with open(full_path, 'r') as file:
+            try:
+                informes = json.load(file)
+            except json.JSONDecodeError:
+                print("El archivo JSON de resultados no existe. Se creara un nuevo archivo de resultados.json")
+                informes = []
+    else:
+        informes = []
+        
+    # Inicializo contador que representará el mes del informe
+    rutaCompleta = os.path.join(script_dir, '../data/ddbb/', 'amount.json')
+    with open(rutaCompleta, 'r') as amountFile:
+        data = json.load(amountFile)
+        amount = data["amount"]
+        
+    mesTexto = getMonthText(amount)
+    if mesTexto is None:
+        print("Mes no valido")
+        return  # Detener la ejecución si el mes no es válido
+        
+    # Añadir el nuevo informe al archivo
+    cabecera = mesTexto.center(20,"#") 
+    informes.append(cabecera)
+    informes.append(votos)
+        
+    # Escribir el contenido actualizado de nuevo en el archivo
+    with open(full_path, 'a') as file:
+        json.dump(informes, file, indent=4)
