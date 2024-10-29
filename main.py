@@ -1,4 +1,4 @@
-from functions.read_and_write import getJson, createNewJson, getLastUpdatedJson, saveJson, createInformeMesAMes
+from functions.read_and_write import getJson, createNewJson, getLastUpdatedJson, saveJson, createInforme
 from functions.data_generator import generar_votos, calcular_variacion_porcentajes
 from functions.print_generator import generar_salida
 
@@ -12,7 +12,7 @@ def main():
     lastUpdated = getLastUpdatedJson() 
     updatedWeightJSON = calcular_variacion_porcentajes(lastUpdated) 
     newJson = generar_votos(updatedWeightJSON, jsonCandidates)
-    results = createInformeMesAMes(newJson)
+    # results = createInforme(newJson)
     createNewJson(newJson)
     
 

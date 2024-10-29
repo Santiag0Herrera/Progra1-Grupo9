@@ -1,0 +1,32 @@
+[
+    {
+        "candidato": "Sergio Massa",
+        "votos": 9587090,
+        "porcentaje": 35.23
+    },
+    {
+        "candidato": "Javier Milei",
+        "votos": 6635058,
+        "porcentaje": 24.38
+    },
+    {
+        "candidato": "Patricia Bullrich",
+        "votos": 7858914,
+        "porcentaje": 28.88
+    },
+    {
+        "candidato": "Juan Schiaretti",
+        "votos": 1523599,
+        "porcentaje": 5.6
+    },
+    {
+        "candidato": "Mirian Bregman",
+        "votos": 881379,
+        "porcentaje": 3.24
+    },
+    {
+        "candidato": "Votos B/N",
+        "votos": 729163,
+        "porcentaje": 2.68
+    }
+]

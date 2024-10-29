@@ -1,0 +1,482 @@
+{
+    "Buenos Aires": {
+        "peso": {
+            "Sergio Massa": 40.98,
+            "Javier Milei": 20.31,
+            "Patricia Bullrich": 32.46,
+            "Juan Schiaretti": 1.74,
+            "Mirian Bregman": 3.51,
+            "Votos B/N": 1
+        },
+        "poblacion": 17569053,
+        "votos": {
+            "Sergio Massa": 4268760,
+            "Javier Milei": 2115630,
+            "Patricia Bullrich": 3381258,
+            "Juan Schiaretti": 181250,
+            "Mirian Bregman": 365626,
+            "Votos B/N": 104167
+        },
+        "votantes_ausentes": 4040882
+    },
+    "Catamarca": {
+        "peso": {
+            "Sergio Massa": 42.61,
+            "Javier Milei": 24.45,
+            "Patricia Bullrich": 14.33,
+            "Juan Schiaretti": 1.5,
+            "Mirian Bregman": 1.82,
+            "Votos B/N": 15.29
+        },
+        "poblacion": 429556,
+        "votos": {
+            "Sergio Massa": 108521,
+            "Javier Milei": 62270,
+            "Patricia Bullrich": 36496,
+            "Juan Schiaretti": 3820,
+            "Mirian Bregman": 4635,
+            "Votos B/N": 38941
+        },
+        "votantes_ausentes": 98798
+    },
+    "Chaco": {
+        "peso": {
+            "Sergio Massa": 35.66,
+            "Javier Milei": 22.93,
+            "Patricia Bullrich": 24.31,
+            "Juan Schiaretti": 5.73,
+            "Mirian Bregman": 3.17,
+            "Votos B/N": 8.2
+        },
+        "poblacion": 1142963,
+        "votos": {
+            "Sergio Massa": 241655,
+            "Javier Milei": 155388,
+            "Patricia Bullrich": 164740,
+            "Juan Schiaretti": 38830,
+            "Mirian Bregman": 21482,
+            "Votos B/N": 55568
+        },
+        "votantes_ausentes": 262881
+    },
+    "Chubut": {
+        "peso": {
+            "Sergio Massa": 38.63,
+            "Javier Milei": 37.9,
+            "Patricia Bullrich": 15.48,
+            "Juan Schiaretti": 4.41,
+            "Mirian Bregman": 1,
+            "Votos B/N": 2.58
+        },
+        "poblacion": 603120,
+        "votos": {
+            "Sergio Massa": 138137,
+            "Javier Milei": 135527,
+            "Patricia Bullrich": 55355,
+            "Juan Schiaretti": 15770,
+            "Mirian Bregman": 3576,
+            "Votos B/N": 9226
+        },
+        "votantes_ausentes": 138718
+    },
+    "Ciudad Autonoma de Buenos Aires": {
+        "peso": {
+            "Sergio Massa": 30.59,
+            "Javier Milei": 16.82,
+            "Patricia Bullrich": 44.5,
+            "Juan Schiaretti": 6.09,
+            "Mirian Bregman": 1,
+            "Votos B/N": 1
+        },
+        "poblacion": 3121707,
+        "votos": {
+            "Sergio Massa": 566178,
+            "Javier Milei": 311315,
+            "Patricia Bullrich": 823633,
+            "Juan Schiaretti": 112717,
+            "Mirian Bregman": 18509,
+            "Votos B/N": 18509
+        },
+        "votantes_ausentes": 717993
+    },
+    "Cordoba": {
+        "peso": {
+            "Sergio Massa": 12.1,
+            "Javier Milei": 27.59,
+            "Patricia Bullrich": 26.69,
+            "Juan Schiaretti": 30.67,
+            "Mirian Bregman": 1.95,
+            "Votos B/N": 1.0
+        },
+        "poblacion": 3978984,
+        "votos": {
+            "Sergio Massa": 285456,
+            "Javier Milei": 650887,
+            "Patricia Bullrich": 629654,
+            "Juan Schiaretti": 723548,
+            "Mirian Bregman": 46003,
+            "Votos B/N": 23591
+        },
+        "votantes_ausentes": 915166
+    },
+    "Corrientes": {
+        "peso": {
+            "Sergio Massa": 38.85,
+            "Javier Milei": 21.47,
+            "Patricia Bullrich": 31.17,
+            "Juan Schiaretti": 6.49,
+            "Mirian Bregman": 1.01,
+            "Votos B/N": 1.01
+        },
+        "poblacion": 1197553,
+        "votos": {
+            "Sergio Massa": 275846,
+            "Javier Milei": 152443,
+            "Patricia Bullrich": 221316,
+            "Juan Schiaretti": 46081,
+            "Mirian Bregman": 7171,
+            "Votos B/N": 7171
+        },
+        "votantes_ausentes": 275437
+    },
+    "Entre Rios": {
+        "peso": {
+            "Sergio Massa": 30.8,
+            "Javier Milei": 29.17,
+            "Patricia Bullrich": 16.93,
+            "Juan Schiaretti": 11.58,
+            "Mirian Bregman": 3.51,
+            "Votos B/N": 8.01
+        },
+        "poblacion": 1426426,
+        "votos": {
+            "Sergio Massa": 260484,
+            "Javier Milei": 246699,
+            "Patricia Bullrich": 143182,
+            "Juan Schiaretti": 97935,
+            "Mirian Bregman": 29685,
+            "Votos B/N": 67743
+        },
+        "votantes_ausentes": 328078
+    },
+    "Formosa": {
+        "peso": {
+            "Sergio Massa": 49.98,
+            "Javier Milei": 21.26,
+            "Patricia Bullrich": 20.76,
+            "Juan Schiaretti": 6.0,
+            "Mirian Bregman": 1,
+            "Votos B/N": 1
+        },
+        "poblacion": 606041,
+        "votos": {
+            "Sergio Massa": 179589,
+            "Javier Milei": 76392,
+            "Patricia Bullrich": 74595,
+            "Juan Schiaretti": 21559,
+            "Mirian Bregman": 3593,
+            "Votos B/N": 3593
+        },
+        "votantes_ausentes": 139389
+    },
+    "Jujuy": {
+        "peso": {
+            "Sergio Massa": 30.87,
+            "Javier Milei": 37.39,
+            "Patricia Bullrich": 19.39,
+            "Juan Schiaretti": 3.52,
+            "Mirian Bregman": 6.98,
+            "Votos B/N": 1.85
+        },
+        "poblacion": 797955,
+        "votos": {
+            "Sergio Massa": 146048,
+            "Javier Milei": 176895,
+            "Patricia Bullrich": 91736,
+            "Juan Schiaretti": 16653,
+            "Mirian Bregman": 33023,
+            "Votos B/N": 8752
+        },
+        "votantes_ausentes": 183530
+    },
+    "La Pampa": {
+        "peso": {
+            "Sergio Massa": 36.65,
+            "Javier Milei": 32.21,
+            "Patricia Bullrich": 9.31,
+            "Juan Schiaretti": 10.77,
+            "Mirian Bregman": 6.3,
+            "Votos B/N": 4.76
+        },
+        "poblacion": 377576,
+        "votos": {
+            "Sergio Massa": 82046,
+            "Javier Milei": 72107,
+            "Patricia Bullrich": 20842,
+            "Juan Schiaretti": 24110,
+            "Mirian Bregman": 14103,
+            "Votos B/N": 10656
+        },
+        "votantes_ausentes": 86842
+    },
+    "La Rioja": {
+        "peso": {
+            "Sergio Massa": 49.35,
+            "Javier Milei": 28.64,
+            "Patricia Bullrich": 7.34,
+            "Juan Schiaretti": 1,
+            "Mirian Bregman": 2.62,
+            "Votos B/N": 11.05
+        },
+        "poblacion": 384356,
+        "votos": {
+            "Sergio Massa": 112461,
+            "Javier Milei": 65266,
+            "Patricia Bullrich": 16727,
+            "Juan Schiaretti": 2279,
+            "Mirian Bregman": 5971,
+            "Votos B/N": 25181
+        },
+        "votantes_ausentes": 88402
+    },
+    "Mendoza": {
+        "peso": {
+            "Sergio Massa": 29.88,
+            "Javier Milei": 32.92,
+            "Patricia Bullrich": 26.23,
+            "Juan Schiaretti": 3.07,
+            "Mirian Bregman": 1,
+            "Votos B/N": 6.9
+        },
+        "poblacion": 1992258,
+        "votos": {
+            "Sergio Massa": 352945,
+            "Javier Milei": 388854,
+            "Patricia Bullrich": 309831,
+            "Juan Schiaretti": 36263,
+            "Mirian Bregman": 11812,
+            "Votos B/N": 81503
+        },
+        "votantes_ausentes": 458219
+    },
+    "Misiones": {
+        "peso": {
+            "Sergio Massa": 36.12,
+            "Javier Milei": 26.1,
+            "Patricia Bullrich": 19.79,
+            "Juan Schiaretti": 2.88,
+            "Mirian Bregman": 12.02,
+            "Votos B/N": 3.09
+        },
+        "poblacion": 1191392,
+        "votos": {
+            "Sergio Massa": 255143,
+            "Javier Milei": 184364,
+            "Patricia Bullrich": 139792,
+            "Juan Schiaretti": 20344,
+            "Mirian Bregman": 84906,
+            "Votos B/N": 21827
+        },
+        "votantes_ausentes": 274020
+    },
+    "Neuquen": {
+        "peso": {
+            "Sergio Massa": 35.59,
+            "Javier Milei": 31.13,
+            "Patricia Bullrich": 20.52,
+            "Juan Schiaretti": 5.69,
+            "Mirian Bregman": 4.2,
+            "Votos B/N": 2.87
+        },
+        "poblacion": 703109,
+        "votos": {
+            "Sergio Massa": 148365,
+            "Javier Milei": 129773,
+            "Patricia Bullrich": 85542,
+            "Juan Schiaretti": 23720,
+            "Mirian Bregman": 17509,
+            "Votos B/N": 11964
+        },
+        "votantes_ausentes": 161715
+    },
+    "Rio Negro": {
+        "peso": {
+            "Sergio Massa": 39.19,
+            "Javier Milei": 31.5,
+            "Patricia Bullrich": 22.4,
+            "Juan Schiaretti": 1,
+            "Mirian Bregman": 4.91,
+            "Votos B/N": 1.0
+        },
+        "poblacion": 762067,
+        "votos": {
+            "Sergio Massa": 177072,
+            "Javier Milei": 142326,
+            "Patricia Bullrich": 101210,
+            "Juan Schiaretti": 4518,
+            "Mirian Bregman": 22185,
+            "Votos B/N": 4518
+        },
+        "votantes_ausentes": 175275
+    },
+    "Salta": {
+        "peso": {
+            "Sergio Massa": 36.17,
+            "Javier Milei": 45.65,
+            "Patricia Bullrich": 13.69,
+            "Juan Schiaretti": 2.49,
+            "Mirian Bregman": 1,
+            "Votos B/N": 1.0
+        },
+        "poblacion": 1440672,
+        "votos": {
+            "Sergio Massa": 308955,
+            "Javier Milei": 389931,
+            "Patricia Bullrich": 116936,
+            "Juan Schiaretti": 21269,
+            "Mirian Bregman": 8542,
+            "Votos B/N": 8542
+        },
+        "votantes_ausentes": 331355
+    },
+    "San Juan": {
+        "peso": {
+            "Sergio Massa": 34.47,
+            "Javier Milei": 31.17,
+            "Patricia Bullrich": 20.71,
+            "Juan Schiaretti": 6.36,
+            "Mirian Bregman": 1,
+            "Votos B/N": 6.29
+        },
+        "poblacion": 818234,
+        "votos": {
+            "Sergio Massa": 167225,
+            "Javier Milei": 151215,
+            "Patricia Bullrich": 100471,
+            "Juan Schiaretti": 30854,
+            "Mirian Bregman": 4851,
+            "Votos B/N": 30515
+        },
+        "votantes_ausentes": 188194
+    },
+    "San Luis": {
+        "peso": {
+            "Sergio Massa": 26.69,
+            "Javier Milei": 37.57,
+            "Patricia Bullrich": 24.74,
+            "Juan Schiaretti": 1.85,
+            "Mirian Bregman": 5.58,
+            "Votos B/N": 3.57
+        },
+        "poblacion": 540905,
+        "votos": {
+            "Sergio Massa": 85596,
+            "Javier Milei": 120488,
+            "Patricia Bullrich": 79342,
+            "Juan Schiaretti": 5933,
+            "Mirian Bregman": 17895,
+            "Votos B/N": 11449
+        },
+        "votantes_ausentes": 124408
+    },
+    "Santa Cruz": {
+        "peso": {
+            "Sergio Massa": 38.41,
+            "Javier Milei": 26.19,
+            "Patricia Bullrich": 20.49,
+            "Juan Schiaretti": 1.94,
+            "Mirian Bregman": 1.77,
+            "Votos B/N": 11.2
+        },
+        "poblacion": 333473,
+        "votos": {
+            "Sergio Massa": 75943,
+            "Javier Milei": 51782,
+            "Patricia Bullrich": 40512,
+            "Juan Schiaretti": 3836,
+            "Mirian Bregman": 3500,
+            "Votos B/N": 22144
+        },
+        "votantes_ausentes": 76699
+    },
+    "Santa Fe": {
+        "peso": {
+            "Sergio Massa": 29.95,
+            "Javier Milei": 25.45,
+            "Patricia Bullrich": 34.02,
+            "Juan Schiaretti": 2.27,
+            "Mirian Bregman": 3.25,
+            "Votos B/N": 5.06
+        },
+        "poblacion": 3556522,
+        "votos": {
+            "Sergio Massa": 631544,
+            "Javier Milei": 536654,
+            "Patricia Bullrich": 717367,
+            "Juan Schiaretti": 47867,
+            "Mirian Bregman": 68532,
+            "Votos B/N": 106698
+        },
+        "votantes_ausentes": 818000
+    },
+    "Santiago del Estero": {
+        "peso": {
+            "Sergio Massa": 36.9,
+            "Javier Milei": 17.31,
+            "Patricia Bullrich": 24.97,
+            "Juan Schiaretti": 4.42,
+            "Mirian Bregman": 11.55,
+            "Votos B/N": 4.85
+        },
+        "poblacion": 1041430,
+        "votos": {
+            "Sergio Massa": 227844,
+            "Javier Milei": 106883,
+            "Patricia Bullrich": 154181,
+            "Juan Schiaretti": 27292,
+            "Mirian Bregman": 71317,
+            "Votos B/N": 29947
+        },
+        "votantes_ausentes": 239529
+    },
+    "Tierra del Fuego": {
+        "peso": {
+            "Sergio Massa": 33.19,
+            "Javier Milei": 32.85,
+            "Patricia Bullrich": 13.25,
+            "Juan Schiaretti": 6.75,
+            "Mirian Bregman": 6.56,
+            "Votos B/N": 7.4
+        },
+        "poblacion": 175000,
+        "votos": {
+            "Sergio Massa": 34437,
+            "Javier Milei": 34084,
+            "Patricia Bullrich": 13748,
+            "Juan Schiaretti": 7004,
+            "Mirian Bregman": 6806,
+            "Votos B/N": 7678
+        },
+        "votantes_ausentes": 40250
+    },
+    "Tucuman": {
+        "peso": {
+            "Sergio Massa": 45.02,
+            "Javier Milei": 17.53,
+            "Patricia Bullrich": 33.55,
+            "Juan Schiaretti": 1,
+            "Mirian Bregman": 1,
+            "Votos B/N": 1.9
+        },
+        "poblacion": 1711500,
+        "votos": {
+            "Sergio Massa": 456840,
+            "Javier Milei": 177885,
+            "Patricia Bullrich": 340448,
+            "Juan Schiaretti": 10147,
+            "Mirian Bregman": 10147,
+            "Votos B/N": 19280
+        },
+        "votantes_ausentes": 393645
+    }
+}
