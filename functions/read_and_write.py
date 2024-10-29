@@ -66,7 +66,6 @@ def getLastUpdatedJson():
         return defaultContent
     else:
       while file != None:
-          print(storage_length)
           storage_length += 1
           file = getJson(f"../data/ddbb/{storage_length}.json")
       file = getJson(f"../data/ddbb/{storage_length-1}.json")
