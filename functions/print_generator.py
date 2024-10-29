@@ -34,26 +34,4 @@ def generar_salida(jsonFinal):
         })
     print("+------------------------------------------------------+")
 
-    # # Obtener la ruta completa del directorio
-    # script_dir = os.path.dirname(__file__)
-    # full_path = os.path.join(script_dir, '../data/ddbb/', 'resultados.json')
-    # os.makedirs(os.path.dirname(full_path), exist_ok=True)
-
-    # # Leer el archivo existente si existe
-    # if os.path.exists(full_path):
-    #     with open(full_path, 'r') as file:
-    #         try:
-    #             informes = json.load(file)
-    #         except json.JSONDecodeError:
-    #             print("El archivo JSON de resultados no existe. Se creara un nuevo archivo de resultados.json")
-    #             informes = []
-    # else:
-    #     informes = []
-
-    # # Agregar los nuevos resultados a los informes existentes
-    # informes.extend(resultados)
-
-    # # Guardar los resultados en el archivo resultados.json
-    # with open(full_path, 'w') as file:
-    #     json.dump(informes, file, indent=4)
     return totalVotos
