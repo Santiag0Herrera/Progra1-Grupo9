@@ -1,6 +1,6 @@
 from functions.read_and_write import getJson, createNewJson, getLastUpdatedJson, createInforme
 from functions.data_generator import generar_votos, calcular_variacion_porcentajes
-from functions.print_generator import generar_salida, generar_tabla_porcentaje_candidato, generar_tabla_porcentaje_provincia
+from functions.print_generator import generar_salida, generar_tabla_porcentaje_candidato, generar_tabla_porcentaje_provincia, sumar_votos_candidatos_recursiva
 
 
 def main():
