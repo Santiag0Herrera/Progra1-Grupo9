@@ -1,4 +1,3 @@
-import os
 from functions.read_and_write import verify_if_exists_csv, create_new_empty_csv, write_csv, read_new_csv
 
 def sumar_votos_candidatos_recursiva(province_list, candidates_result=None):
@@ -43,4 +42,19 @@ def generar_tabla_porcentaje_candidato(jsonFinal, csv_file = 'resultados.csv'):
   write_csv(csv_file, csv_content)
 
 
-# def generar_tabla_porcentaje_provincia(jsonFinal, csv_file='data/resultados_provincias.csv'):
+def generar_tabla_porcentaje_provincia(jsonFinal, candidates, csv_file='resultados_provincias.csv'):
+  csv_content = " ,"
+  for candidate in candidates:
+    csv_content += f'{candidate}, '
+
+  csv_content += '\n'
+  for province in jsonFinal:
+    csv_content += f"{province}, "
+    for candidate in candidates:
+      if candidate in jsonFinal[province]["peso"]:
+        csv_content += f"{round(jsonFinal[province]['peso'][candidate], 2)}%, "
+    csv_content += '\n'
+
+  if verify_if_exists_csv(csv_file) == False:
+    create_new_empty_csv(csv_file)
+  write_csv(csv_file, csv_content)
