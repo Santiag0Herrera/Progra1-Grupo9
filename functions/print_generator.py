@@ -1,4 +1,5 @@
 import os
+from functions.read_and_write import verify_if_exists_csv, create_new_empty_csv, write_csv, read_new_csv
 
 def sumar_votos_candidatos_recursiva(province_list, candidates_result=None):
     if candidates_result is None:
@@ -16,106 +17,30 @@ def sumar_votos_candidatos_recursiva(province_list, candidates_result=None):
         return sumar_votos_candidatos_recursiva(province_list, candidates_result)
 
 def generar_salida(jsonFinal):
-  print("+------------------------------------------------------+")
-  print("|                RESULTADOS DE REALES                  |")
-  print("+------------------------------------------------------+")
-  
   totalVotos = sumar_votos_candidatos_recursiva(jsonFinal.copy())
-
-  # Total de votos
-  total_votos_sum = sum(totalVotos.values())
-  
-  # Encabezado
-  print("| " + ("Candidato" + " |" + "Votos".center(9) + "| " + "Porcentaje").center(52) + " |")
-  print("+------------------------------------------------------+")
-
-  # Filas
-  for cand in totalVotos:
-    candidato = cand.center(20)
-    votos = str(totalVotos[cand]).center(10)
-    porcentaje = f"{round((totalVotos[cand] / total_votos_sum) * 100, 2)}%".center(10)
-    print(f"{candidato} | {votos} | {porcentaje}")
-  print("+------------------------------------------------------+")
-
   return totalVotos
 
-def generar_tabla_porcentaje_candidato(jsonFinal, csv_file = 'data/resultados.csv'):
-    totalVotos = {}
-    for prov in jsonFinal:
-        for cand in jsonFinal[prov]["votos"]:
-            if cand in totalVotos:
-                totalVotos[cand] += jsonFinal[prov]["votos"][cand]
-            else:
-                totalVotos[cand] = jsonFinal[prov]["votos"][cand]
-    
-    total_votos_sum = sum(totalVotos.values())
+def generar_tabla_porcentaje_candidato(jsonFinal, csv_file = 'resultados.csv'):
+  totalVotos = sumar_votos_candidatos_recursiva(jsonFinal.copy())
+  total_votos_sum = sum(totalVotos.values())
+  csv_content = ""
 
-    resultados = []
+  if verify_if_exists_csv(csv_file) == False:
+      create_new_empty_csv(csv_file)
+      for cand in totalVotos:
+        porcentaje = f"{round((totalVotos[cand] / total_votos_sum) * 100, 2)}%"
+        csv_content += f"{cand}, {porcentaje}\n"
+  else: 
+    csv_content = read_new_csv(csv_file)
     for cand in totalVotos:
-        resultados.append({
-            "candidato": cand,
-            "votos": totalVotos[cand],
-            "porcentaje": round((totalVotos[cand] / total_votos_sum) * 100, 2)
-        })
+        porcentaje = f"{round((totalVotos[cand] / total_votos_sum) * 100, 2)}%"
+        lines = csv_content.split('\n')
+        for i, line in enumerate(lines):
+            if cand in line:
+                lines[i] += f", {porcentaje}"
+        csv_content = '\n'.join(lines)
 
-    existing_data = {}
-    try:
-        with open(csv_file, 'r') as f:
-            lines = f.readlines()
-            headers = lines[0].strip().split(', ')
-            for line in lines[1:]:
-                values = line.strip().split(', ')
-                candidato = values[0]
-                existing_data[candidato] = {headers[i]: values[i] for i in range(len(headers))}
-    except FileNotFoundError:
+  write_csv(csv_file, csv_content)
 
-        headers = ['Candidato']
-        existing_data = {item['candidato']: {'Candidato': item['candidato']} for item in resultados}
 
-    new_column_name = f"{len(headers) - 1}"
-    headers.append(new_column_name)
-    for item in resultados:
-        candidato = item['candidato']
-        if candidato in existing_data:
-            existing_data[candidato][new_column_name] = str(item['porcentaje'])
-        else:
-            existing_data[candidato] = {'Candidato': candidato, new_column_name: str(item['votos'])}
-    
-    with open(csv_file, 'w') as f:
-        f.write(', '.join(headers) + '\n')
-        for row in existing_data.values():
-            f.write(', '.join(row.get(header, '') for header in headers) + '\n')
-    
-
-def generar_tabla_porcentaje_provincia(jsonFinal, csv_file='data/resultados_provincias.csv'):
-    resultados = {}
-    for prov in jsonFinal:
-        total_votos_provincia = sum(jsonFinal[prov]["votos"].values())
-        resultados[prov] = {}
-        for cand, votos in jsonFinal[prov]["votos"].items():
-            resultados[prov][cand] = round((votos / total_votos_provincia) * 100, 2)
-    existing_data = {}
-    headers = ['Provincia']
-    try:
-        with open(csv_file, 'r') as f:
-            lines = f.readlines()
-            headers = lines[0].strip().split(', ')
-            for line in lines[1:]:
-                values = line.strip().split(', ')
-                provincia = values[0]
-                existing_data[provincia] = {headers[i]: values[i] for i in range(len(headers))}
-    except FileNotFoundError:
-        existing_data = {prov: {'Provincia': prov} for prov in resultados}
-
-    for prov, data in resultados.items():
-        if prov not in existing_data:
-            existing_data[prov] = {'Provincia': prov}
-        for cand, porcentaje in data.items():
-            if cand not in headers:
-                headers.append(cand)
-            existing_data[prov][cand] = str(porcentaje)
-    
-    with open(csv_file, 'w') as f:
-        f.write(', '.join(headers) + '\n')
-        for row in existing_data.values():
-            f.write(', '.join(row.get(header, '') for header in headers) + '\n')
+# def generar_tabla_porcentaje_provincia(jsonFinal, csv_file='data/resultados_provincias.csv'):
