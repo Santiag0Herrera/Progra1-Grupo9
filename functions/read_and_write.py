@@ -1,12 +1,9 @@
-import json
-import os
+import json, os
 from functions.backup import backupJson0
 script_dir = os.path.dirname(__file__)
 
-
 ######### JSON FILES MANIPULATION #########
 def getJson(fileName):
-    # Construir la ruta completa al archivo JSON
     full_path = os.path.join(script_dir, fileName)
     try:
         with open(full_path, 'r') as file:
@@ -18,9 +15,7 @@ def getJson(fileName):
         return None
 
 def saveJson(fileName, data):
-    # Obtener la ruta del directorio del script actual
     script_dir = os.path.dirname(__file__)
-    # Construir la ruta completa al archivo JSON
     full_path = os.path.join(script_dir, fileName)
     try:
         with open(full_path, 'w') as file:
@@ -32,28 +27,19 @@ def saveJson(fileName, data):
 
 def createNewJson(data):
     storage_length = getJson("../data/ddbb/amount.json")["amount"]
-    # Construir la ruta completa al archivo JSON
     full_path = os.path.join(script_dir, '../data/ddbb/', f"{storage_length+1}.json")
-
     os.makedirs(os.path.dirname(full_path), exist_ok=True)
-    
-    # Escribir los datos en el archivo JSON
     with open(full_path, 'w') as file:
         json.dump(data, file, indent=4)
-
     saveJson("../data/ddbb/amount.json", {"amount": storage_length + 1})
 
 def getLastUpdatedJson():
     defaultContent = backupJson0()
     storage_length = 0
     file = getJson("../data/ddbb/0.json")
-    # Construir la ruta completa al archivo JSON
-
     if file == None:
-        # Construir la ruta completa al archivo JSON
         full_path = os.path.join(script_dir, '../data/ddbb/', f"0.json")
         os.makedirs(os.path.dirname(full_path), exist_ok=True)
-        # Escribir los datos en el archivo JSON
         with open(full_path, 'w') as file:
             json.dump(defaultContent, file, indent=4)
         return defaultContent
@@ -67,8 +53,6 @@ def getLastUpdatedJson():
 def createInforme(resultados):
     full_path = os.path.join(script_dir, '../data/ddbb/', 'resultados.json')
     os.makedirs(os.path.dirname(full_path), exist_ok=True)
-        
-    # valido que exista la ruta para salvar en caso de excepcion 
     if os.path.exists(full_path):
         with open(full_path, 'r') as file:
             try:
@@ -78,17 +62,13 @@ def createInforme(resultados):
                 informes = {}
     else:
         informes = {}
-
     storage_length = getJson("../data/ddbb/amount.json")["amount"]
     informes[storage_length] = resultados
-        
-    # Escribir el contenido actualizado de nuevo en el archivo
     with open(full_path, 'w') as file:
         json.dump(informes, file, indent=4)
 
 
 ######### CSV FILES MANIPULATION #########
-
 def verify_if_exists_csv(file_name):
     full_path = os.path.join(script_dir, '../data/', file_name)
     return os.path.exists(full_path)
