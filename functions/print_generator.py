@@ -16,6 +16,26 @@ def sumar_votos_candidatos_recursiva(province_list, candidates_result=None):
 
 def generar_salida(jsonFinal):
   totalVotos = sumar_votos_candidatos_recursiva(jsonFinal.copy())
+  print("+------------------------------------------------------+")
+  print("|                RESULTADOS DE REALES                  |")
+  print("+------------------------------------------------------+")
+  
+  totalVotos = sumar_votos_candidatos_recursiva(jsonFinal.copy())
+
+  # Total de votos
+  total_votos_sum = sum(totalVotos.values())
+  
+  # Encabezado
+  print("| " + ("Candidato" + " |" + "Votos".center(9) + "| " + "Porcentaje").center(52) + " |")
+  print("+------------------------------------------------------+")
+
+  # Filas
+  for cand in totalVotos:
+    candidato = cand.center(20)
+    votos = str(totalVotos[cand]).center(10)
+    porcentaje = f"{round((totalVotos[cand] / total_votos_sum) * 100, 2)}%".center(10)
+    print(f"{candidato} | {votos} | {porcentaje}")
+  print("+------------------------------------------------------+")
   return totalVotos
 
 def generar_tabla_porcentaje_candidato(jsonFinal, csv_file = 'resultados.csv'):
